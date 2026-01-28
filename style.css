@@ -26,10 +26,24 @@ body {
     color: #9CA3AF;
     margin: 0;
     font-family: 'Lora', Georgia, 'Times New Roman', serif;
+    max-width: 100%;
+}
+
+html,
+body {
+    overflow-x: hidden !important;
+    width: 100%;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    max-width: 60px;
 }
 
 #logo {
-    max-width: 60px;
+    max-width: 100%;
+    height: auto;
 }
 
 header {
@@ -42,6 +56,8 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+    width: 100%;
+    max-width: 100%;
 }
 
 #nav-links {
@@ -186,7 +202,7 @@ h2 {
 
 h3 {
     color: #8B1538;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 20px;
     letter-spacing: 0.05rem;
