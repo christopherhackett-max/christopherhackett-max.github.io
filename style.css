@@ -205,25 +205,158 @@ h3 {
     color: #C41E3A;
 }
 
-#contact-section {
+#project-section {
+    padding: 60px;
+}
+
+#projects-container {
+    display: grid;
+    gap: 25px;
+}
+
+.project-item {
+    background-color: #1a1a1a;
+    border-radius: 4px;
+    padding: 20px;
+    border: 1px solid #9CA3AF;
+}
+
+.project-item * {
+    margin-bottom: 15px;
+}
+
+.project-item a {
+    text-decoration: none;
+    color: #9CA3AF;
+    transition: 0.3s ease;
+}
+
+.project-item a:hover {
+    color: #C41E3A;
+}
+
+.project-tech {
     display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.project-tech li {
+    background-color: #0a0a0a;
+    padding: 4px 10px;
+    border-radius: 4px;
+    color: #9CA3AF;
+}
+
+#contact-section {
     background-color: #1a1a1a;
     padding: 80px 40px;
     border-radius: 4px;
 }
 
+#contact-heading h2 {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+#contact-heading p {
+    margin-bottom: 30px;
+}
+
+#contacting {
+    display: grid;
+    gap: 40px;
+}
+
 #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#form-row {
     display: grid;
     gap: 20px;
 }
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group input,
+textarea {
+    padding: 14px;
+    background-color: #0a0a0a;
+    border: #9CA3AF solid 1px;
+    border-radius: 4px;
+    color: #9CA3AF;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #C41E3A;
+    box-shadow: 0 0 0 3px #8B1538;
+}
+
+#form-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    align-self: flex-start;
+    padding: 14px 28px;
+    background-color: #8B1538;
+    border: none;
+    color: #E8E6E3;
+    transition: all 0.3s ease;
+}
+
+#form-button:hover {
+    background-color: #C41E3A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(184, 0, 28, 0.3)
+}
+
 #contact-info {
-    border-left: #9CA3AF solid 1px;
-    padding-left: 20px;
+    display: grid;
+    gap: 30px;
+    padding-top: 30px;
+    border-top: 1px solid #9CA3AF;
+}
+
+#social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.info-section a {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.info-section a:hover {
+    color: #C41E3A;
 }
 
 footer {
     display: flex;
     justify-content: space-between;
     padding: 30px 30px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #9CA3AF;
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    color: #C41E3A;
 }
