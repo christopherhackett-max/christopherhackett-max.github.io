@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Lora';
+    font-style: italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/lora/v37/0QI8MX1D_JOuMw_hLdO6T2wV9KnW-MoFoqJ2nPWc3ZyhTjcV.woff2) format('woff2');
+    unicode-range: U +0460 -052F, U +1C80 -1C8A, U +20B4, U +2DE0 -2DFF, U + A640-A69F, U + FE2E-FE2F;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #9CA3AF;
+    margin: 0;
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+}
+
+#logo {
+    max-width: 60px;
+}
+
+header {
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #9CA3AF solid 0.5px;
+    padding: 13px 30px;
+    position: sticky;
+    top: 0;
+}
+
+#nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+#nav-links a {
+    text-decoration: none;
+    color: #9CA3AF;
+    position: relative;
+}
+
+#nav-links a:hover {
+    color: #C41E3A;
+    transition: color 0.3s ease;
+}
+
+#nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #9CA3AF;
+    transition: 0.3s;
+}
+
+#nav-links a:hover::after {
+    width: 100%;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    padding: 100px 20px;
+}
+
+h1 {
+    color: #E8E6E3;
+    font-weight: 400;
+    letter-spacing: 0.02rem;
+    font-size: 3.5rem;
+}
+
+#tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+p {
+    font-size: large;
+    max-width: 525px;
+}
+
+#hero-buttons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.button {
+    font-family: 'Lora', Georgia, 'Times New Roman', serif;
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: none;
+    transition: 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+#projects-button {
+    background-color: #8B1538;
+    color: #E8E6E3;
+}
+
+#projects-button:hover {
+    background-color: #C41E3A;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(184, 0, 28, 0.3)
+}
+
+#contact-button {
+    background-color: #0a0a0a;
+    color: #E8E6E3;
+    border: #9CA3AF solid 1px;
+}
+
+#contact-button:hover {
+    border-color: #8B1538;
+    color: #C41E3A;
+    transform: translateY(-2px);
+}
+
+#about-me-container {
+    background-color: #1a1a1a;
+    gap: 40px;
+    padding: 80px 40px;
+    border-radius: 4px;
+}
+
+h2 {
+    color: #8B1538;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+
+}
+
+#about-me {
+    display: grid;
+    gap: 50px;
+}
+
+.my-story {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#skill-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#my-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+h3 {
+    color: #8B1538;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 0.05rem;
+}
+
+#my-skills li {
+    background-color: #0a0a0a;
+    color: #E8E6E3;
+    border: #9CA3AF solid 1px;
+    padding: 10px 18px;
+    font-size: 0.9rem;
+    transition: 0.3s ease;
+}
+
+#my-skills li:hover {
+    border-color: #8B1538;
+    color: #C41E3A;
+}
+
+#contact-section {
+    display: flex;
+    background-color: #1a1a1a;
+    padding: 80px 40px;
+    border-radius: 4px;
+}
+
+#contact-form {
+    display: grid;
+    gap: 20px;
+}
+
+#contact-info {
+    border-left: #9CA3AF solid 1px;
+    padding-left: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 30px;
+}
