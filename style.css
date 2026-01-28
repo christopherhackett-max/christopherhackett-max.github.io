@@ -368,3 +368,28 @@ footer a {
 footer a:hover {
     color: #C41E3A;
 }
+
+@media (min-width: 768px) {
+    #projects-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contacting {
+        display: flex;
+    }
+
+    #form-row {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact-info {
+        border-top: none;
+        border-left: #9CA3AF solid 1px;
+        padding-top: 0;
+        padding-left: 30px;
+    }
+
+    #contact-form {
+        gap: 40px;
+    }
+}
