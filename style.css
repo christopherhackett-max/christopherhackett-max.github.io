@@ -1,3 +1,12 @@
+:root {
+    --color-background: #0a0a0a;
+    --color-background-light: #1a1a1a;
+    --color-text: #9ca3af;
+    --color-accent-light: #c41e3a;
+    --color-accent-dark: #8b1538;
+    --color-headers: #e8e6e3;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +22,8 @@ ul {
 }
 
 body {
-    background-color: #0a0a0a;
-    color: #9CA3AF;
+    background-color: var(--color-background);
+    color: var(--color-text);
     margin: 0;
     font-family: 'Quicksand';
     max-width: 100%;
@@ -32,11 +41,11 @@ body {
 }
 
 header {
-    background-color: #0a0a0a;
+    background-color: var(--color-background);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: #9CA3AF solid 0.5px;
+    border-bottom: var(--color-text) solid 0.5px;
     padding: 13px 30px;
     position: sticky;
     top: 0;
@@ -52,12 +61,12 @@ header {
 
 #nav-links a {
     text-decoration: none;
-    color: #9CA3AF;
+    color: var(--color-text);
     position: relative;
 }
 
 #nav-links a:hover {
-    color: #C41E3A;
+    color: var(--color-accent-light);
     transition: color 0.3s ease;
 }
 
@@ -68,7 +77,7 @@ header {
     left: 0;
     width: 0;
     height: 1px;
-    background-color: #9CA3AF;
+    background-color: var(--color-text);
     transition: 0.3s;
 }
 
@@ -93,7 +102,7 @@ main {
 }
 
 h1 {
-    color: #E8E6E3;
+    color: var(--color-headers);
     font-weight: 400;
     letter-spacing: 0.02rem;
     font-size: 3.5rem;
@@ -126,37 +135,37 @@ p {
 }
 
 #projects-button {
-    background-color: #8B1538;
-    color: #E8E6E3;
+    background-color: var(--color-accent-dark);
+    color: var(--color-headers);
 }
 
 #projects-button:hover {
-    background-color: #C41E3A;
+    background-color: var(--color-accent-light);
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(184, 0, 28, 0.3)
 }
 
 #contact-button {
-    background-color: #0a0a0a;
-    color: #E8E6E3;
-    border: #9CA3AF solid 1px;
+    background-color: var(--color-background);
+    color: var(--color-headers);
+    border: var(--color-text) solid 1px;
 }
 
 #contact-button:hover {
-    border-color: #8B1538;
-    color: #C41E3A;
+    border-color: var(--color-accent-dark);
+    color: var(--color-accent-light);
     transform: translateY(-2px);
 }
 
 #about-me-container {
-    background-color: #1a1a1a;
+    background-color: var(--color-background-light);
     gap: 40px;
     padding: 80px 40px;
     border-radius: 4px;
 }
 
 h2 {
-    color: #8B1538;
+    color: var(--color-accent-dark);
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 40px;
@@ -186,7 +195,7 @@ h2 {
 }
 
 h3 {
-    color: #8B1538;
+    color: var(--color-accent-dark);
     font-size: 1.2rem;
     font-weight: 400;
     margin-bottom: 20px;
@@ -194,17 +203,17 @@ h3 {
 }
 
 #my-skills li {
-    background-color: #0a0a0a;
-    color: #E8E6E3;
-    border: #9CA3AF solid 1px;
+    background-color: var(--color-background);
+    color: var(--color-headers);
+    border: var(--color-text) solid 1px;
     padding: 10px 18px;
     font-size: 0.9rem;
     transition: 0.3s ease;
 }
 
 #my-skills li:hover {
-    border-color: #8B1538;
-    color: #C41E3A;
+    border-color: var(--color-accent-dark);
+    color: var(--color-accent-light);
 }
 
 #project-section {
@@ -217,10 +226,10 @@ h3 {
 }
 
 .project-item {
-    background-color: #1a1a1a;
+    background-color: var(--color-background-light);
     border-radius: 4px;
     padding: 20px;
-    border: 1px solid #9CA3AF;
+    border: 1px solid var(--color-text);
 }
 
 .project-item * {
@@ -229,12 +238,12 @@ h3 {
 
 .project-item a {
     text-decoration: none;
-    color: #9CA3AF;
+    color: var(--color-text);
     transition: 0.3s ease;
 }
 
 .project-item a:hover {
-    color: #C41E3A;
+    color: var(--color-accent-light);
 }
 
 .project-tech {
@@ -245,14 +254,14 @@ h3 {
 }
 
 .project-tech li {
-    background-color: #0a0a0a;
+    background-color: var(--color-background);
     padding: 4px 10px;
     border-radius: 4px;
-    color: #9CA3AF;
+    color: var(--color-text);
 }
 
 #contact-section {
-    background-color: #1a1a1a;
+    background-color: var(--color-background-light);
     padding: 80px 40px;
     border-radius: 4px;
 }
@@ -292,18 +301,18 @@ h3 {
 .form-group input,
 textarea {
     padding: 14px;
-    background-color: #0a0a0a;
-    border: #9CA3AF solid 1px;
+    background-color: var(--color-background);
+    border: var(--color-text) solid 1px;
     border-radius: 4px;
-    color: #9CA3AF;
+    color: var(--color-text);
     transition: all 0.3s ease;
 }
 
 .form-group input:focus,
 textarea:focus {
     outline: none;
-    border-color: #C41E3A;
-    box-shadow: 0 0 0 3px #8B1538;
+    border-color: var(--color-accent-light);
+    box-shadow: 0 0 0 3px --color-accent-dark
 }
 
 #form-button {
@@ -313,14 +322,14 @@ textarea:focus {
     gap: 10px;
     align-self: flex-start;
     padding: 14px 28px;
-    background-color: #8B1538;
+    background-color: var(--color-accent-dark);
     border: none;
-    color: #E8E6E3;
+    color: var(--color-headers);
     transition: all 0.3s ease;
 }
 
 #form-button:hover {
-    background-color: #C41E3A;
+    background-color: var(--color-accent-light);
     transform: translateY(-2px);
     box-shadow: 0 4px 15px rgba(184, 0, 28, 0.3)
 }
@@ -329,7 +338,7 @@ textarea:focus {
     display: grid;
     gap: 30px;
     padding-top: 30px;
-    border-top: 1px solid #9CA3AF;
+    border-top: 1px solid var(--color-text);
 }
 
 #social-links {
@@ -338,13 +347,13 @@ textarea:focus {
 }
 
 .info-section a {
-    color: #9CA3AF;
+    color: var(--color-text);
     text-decoration: none;
     transition: 0.3s ease;
 }
 
 .info-section a:hover {
-    color: #C41E3A;
+    color: var(--color-accent-light);
 }
 
 footer {
@@ -355,12 +364,12 @@ footer {
 
 footer a {
     text-decoration: none;
-    color: #9CA3AF;
+    color: var(--color-text);
     transition: 0.3s ease;
 }
 
 footer a:hover {
-    color: #C41E3A;
+    color: var(--color-accent-light);
 }
 
 @media (min-width: 768px) {
@@ -378,7 +387,7 @@ footer a:hover {
 
     #contact-info {
         border-top: none;
-        border-left: #9CA3AF solid 1px;
+        border-left: var(--color-text) solid 1px;
         padding-top: 0;
         padding-left: 30px;
     }
