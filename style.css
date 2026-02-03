@@ -1,3 +1,5 @@
+/* Variables */
+
 :root {
     --color-background: #0a0a0a;
     --color-background-light: #1a1a1a;
@@ -39,6 +41,8 @@ body {
     max-width: 100%;
     height: auto;
 }
+
+/* Header Section */
 
 header {
     background-color: var(--color-background);
@@ -85,11 +89,15 @@ header {
     width: 100%;
 }
 
+
 main {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
 }
+
+
+/* Hero Section */
 
 #hero-section {
     display: flex;
@@ -157,6 +165,8 @@ p {
     transform: translateY(-2px);
 }
 
+/* About Me Section */
+
 #about-me-container {
     background-color: var(--color-background-light);
     gap: 40px;
@@ -216,6 +226,8 @@ h3 {
     color: var(--color-accent-light);
 }
 
+/* Comment Section */
+
 #project-section {
     padding: 60px;
 }
@@ -259,6 +271,8 @@ h3 {
     border-radius: 4px;
     color: var(--color-text);
 }
+
+/* Contact Me Section */
 
 #contact-section {
     background-color: var(--color-background-light);
@@ -355,6 +369,8 @@ textarea:focus {
 .info-section a:hover {
     color: var(--color-accent-light);
 }
+
+/* Footer */
 
 footer {
     display: flex;
